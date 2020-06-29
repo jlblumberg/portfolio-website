@@ -8,15 +8,15 @@ const Navbar = () => {
     <div className={styles.root}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton edge="start" id='home-button'>
+          <IconButton color="inherit" edge="start" id='home-button'>
             <HomeRoundedIcon />
           </IconButton>
           <div className={styles.centerPadding}></div>
-          <Button>about</Button>
-          <Button>experience</Button>
-          <Button>work</Button>
-          <Button>contact</Button>
-          <Button>CV</Button>
+          <Button color="inherit">about</Button>
+          <Button color="inherit">experience</Button>
+          <Button color="inherit">work</Button>
+          <Button color="inherit">contact</Button>
+          <Button variant="outlined" color="inherit">CV / Resume</Button>
         </Toolbar>
       </AppBar>
     </div>
