@@ -10,4 +10,12 @@ describe('Navbar', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('has links for about, experience, work, contact, and CV', () => {
+    expect(wrapper.text()).toContain('aboutexperienceworkcontactCV');
+  });
+
+  it('has a home button', () => {
+    expect(wrapper.find('#home-button').exists()).toBe(true);
+  });
+
 });
