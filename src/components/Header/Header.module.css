@@ -1,0 +1,14 @@
+.container { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5%;
+}
+
+.profilePic {
+  border: solid silver 0.5px;
+  border-radius: 50%; 
+  height: 200px;
+  margin-bottom: 3%;
+}
