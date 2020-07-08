@@ -12,7 +12,7 @@ describe('About', () => {
   it('has a header, icons, and descriptive text', () => {
     expect(wrapper.find('#header').text()).toEqual('ABOUT');
     expect(wrapper.find('#icons').exists()).toEqual(true);
-    expect(wrapper.find('#description').html()).toContain('full stack software engineer');
+    expect(wrapper.find('#description').html()).toContain('full-stack software engineer');
   });
 
 });
