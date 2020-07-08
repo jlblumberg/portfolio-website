@@ -14,6 +14,7 @@
 }
 
 .headerText {
+  max-width: 90% !important;
   text-align: left !important;
   margin-bottom: 2%;
 }

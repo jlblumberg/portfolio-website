@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Header.module.css';
 import { Typography } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
 const Header = () => {
 
@@ -19,7 +19,7 @@ const Header = () => {
         <Typography variant='h2' color='textSecondary'>I build software for the web.</Typography>
       </div>
       <IconButton color='primary' id='down-button' onClick={handleClick}>
-        <ArrowDownwardIcon fontSize='large' />
+        <KeyboardArrowDownIcon fontSize='large' />
       </IconButton>
     </div>
   );
