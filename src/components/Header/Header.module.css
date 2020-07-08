@@ -1,20 +1,26 @@
-.container { 
+.flexContainer { 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 4%;
+  height: 100vh;
+  background-color: rgb(245, 245, 245);
 }
 
 .profilePic {
   border: solid silver 0.5px;
   border-radius: 50%; 
   height: 200px;
+  margin-top: 6%;
   margin-bottom: 2%;
 }
 
 .headerText {
-  max-width: 90% !important;
-  text-align: left !important;
+  max-width: 90%;
+  text-align: left;
+  margin-bottom: 2%;
+}
+
+.downButton {
   margin-bottom: 2%;
 }

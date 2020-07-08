@@ -5,8 +5,8 @@ import styles from './Navbar.module.css';
 
 const Navbar = () => {
   return (
-    <div className={styles.root}>
-      <AppBar position="static">
+    <div className={styles.container}>
+      <AppBar>
         <Toolbar>
           <IconButton color="inherit" edge="start" id='home-button'>
             <HomeRoundedIcon />
