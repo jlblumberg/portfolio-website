@@ -1,19 +1,26 @@
-.container { 
+.flexContainer { 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 4%;
+  height: 100vh;
+  background-color: rgb(245, 245, 245);
 }
 
 .profilePic {
-  border: solid silver 0.5px;
-  border-radius: 50%; 
-  height: 200px;
-  margin-bottom: 2%;
+  border-radius: 50%;
+  height: 225px;
+  margin-top: 8%;
+  margin-bottom: 1%;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.10);
 }
 
 .headerText {
-  text-align: left !important;
+  max-width: 90%;
+  text-align: left;
+  margin-bottom: 2%;
+}
+
+.downButton {
   margin-bottom: 2%;
 }
