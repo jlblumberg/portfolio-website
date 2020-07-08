@@ -11,7 +11,7 @@ describe('Header', () => {
   });
 
   it('has information about me and my profile image', () => {
-    expect(wrapper.text()).toContain("Hi.I'm Josh Blumberg.I build software for the web.");
+    expect(wrapper.text()).toContain("Hi.I'm Josh Blumberg,  and I build software for the web.");
     expect(wrapper.find('#profile-picture').exists()).toBe(true);
   });
 

@@ -15,8 +15,7 @@ const Header = () => {
       <img src='https://i.imgur.com/OSV6Wuy.jpg' id='profile-picture' alt='Joshs face' className={styles.profilePic} />
       <div className={styles.headerText}>
         <Typography variant='h2'>Hi.</Typography>
-        <Typography variant='h2' color='textSecondary'>I'm Josh Blumberg.</Typography>
-        <Typography variant='h2' color='textSecondary'>I build software for the web.</Typography>
+        <Typography variant='h2' color='textSecondary'>I'm Josh Blumberg, <br /> and I build software for the web.</Typography>
       </div>
       <div className={styles.downButton}>
         <IconButton color='primary' id='down-button' onClick={handleClick}>

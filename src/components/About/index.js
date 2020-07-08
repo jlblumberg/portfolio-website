@@ -4,7 +4,7 @@ import { Typography } from '@material-ui/core';
 
 const About = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.flexContainer}>
       <div className={styles.headerText}>
         <Typography variant='h5'>ABOUT</Typography>
       </div>
