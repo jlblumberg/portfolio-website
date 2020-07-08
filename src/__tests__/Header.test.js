@@ -15,4 +15,8 @@ describe('Header', () => {
     expect(wrapper.find('#profile-picture').exists()).toBe(true);
   });
 
+  it('has a down button which takes you to the about section', () => {
+    expect(wrapper.find('#down-button').exists()).toBe(true);
+  });
+
 });
