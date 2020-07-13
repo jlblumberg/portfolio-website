@@ -17,7 +17,7 @@ const Header = () => {
         <Typography variant='h2'>Hi.</Typography>
         <Typography variant='h2' color='textSecondary'>I'm Josh Blumberg, <br /> and I build software for the web.</Typography>
       </div>
-      <div className={styles.downButton}>
+      <div>
         <IconButton color='primary' id='down-button' onClick={handleClick}>
           <KeyboardArrowDownIcon fontSize='large' />
         </IconButton>

@@ -15,4 +15,8 @@ describe('About', () => {
     expect(wrapper.find('#description').html()).toContain('full-stack software engineer');
   });
 
+  it('has a down button which takes you to the experience section', () => {
+    expect(wrapper.find('#down-button').exists()).toBe(true);
+  });
+
 });
