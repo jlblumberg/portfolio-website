@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from './Experience.module.css';
-import { Typography, IconButton } from '@material-ui/core';
+import { IconButton, Typography, Accordion, AccordionSummary, Avatar, AccordionDetails } from '@material-ui/core';
+import { experiences } from '../../experiences';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const Experience = () => {
 
@@ -15,11 +17,24 @@ const Experience = () => {
         <Typography variant='h5' color='textSecondary'>EXPERIENCE</Typography>
       </div>
       <div className={styles.descriptionText} id='description'>
-        <Typography variant='h6'>
-          <p>
-            experience descriptions
-          </p>
-        </Typography>
+        {experiences.map((experience, index) => (
+          <Accordion id='accordian' key={index}>
+            <AccordionSummary styles={{textAlign: 'center'}} expandIcon={<ExpandMoreIcon />}>
+              <Avatar className={styles.avatar} src={experience.avatar} variant="square"></Avatar>
+              <Typography variant='h6' color='textPrimary' className={styles.primaryHeader}>{experience.institution}</Typography>
+              <Typography variant='h6' color='textSecondary'>{experience.dates}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography variant='h6' component={'span'}>
+                <ul>
+                  <li>{experience.description1}</li>
+                  <li>{experience.description2}</li>
+                  <li>{experience.description3}</li>
+                </ul>
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        ))}
       </div>
       <div>
         <IconButton color='primary' id='down-button' onClick={handleClick}>
