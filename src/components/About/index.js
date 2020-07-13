@@ -2,8 +2,14 @@ import React from 'react';
 import styles from './About.module.css';
 import { Typography, Icon } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
 const About = () => {
+
+  const handleClick = () => {
+    alert('add in scroll functionality later')
+  }
+
   return (
     <div className={styles.flexContainer}>
       <div className={styles.headerText} id='header'>
@@ -36,6 +42,11 @@ const About = () => {
             continue to learn, and build software which solves real world problems.
           </p>
         </Typography>
+      </div>
+      <div className={styles.downButton}>
+        <IconButton color='primary' id='down-button' onClick={handleClick}>
+          <KeyboardArrowDownIcon fontSize='large' />
+        </IconButton>
       </div>
     </div>
   );

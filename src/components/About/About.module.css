@@ -9,12 +9,11 @@
 
 .headerText {
   max-width: 90%;
-  text-align: left;
   margin-bottom: 3%;
 }
 
 .descriptionText {
-  text-align: left;
+  text-align: center;
   max-width: 70%;
 }
 
