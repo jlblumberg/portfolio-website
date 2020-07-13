@@ -28,11 +28,12 @@ const About = () => {
           </p>
           <p>
             I discovered my passion for software when I began learning how to code in order to automate some of the more repetitive tasks in digital marketing.
-            I quickly found that I liked coding more than marketing, and so I enrolled in Makers and committed to career-changing (more on that in my blog post HERE).
+            I quickly found that I liked coding more than marketing, and so I enrolled in Makers and committed to career-changing (more on that in my blog post about it&nbsp;
+            <a href="https://blog.makersacademy.com/bad-days-learning-to-code-and-gaining-control-422936255bb7" target="_blank" rel="noopener noreferrer">here</a>).
           </p>
           <p>
             Now, <strong>I'm looking to join a tech team</strong> where I can provide value,
-            continue to learn, and build interesting technology.
+            continue to learn, and build software which solves real world problems.
           </p>
         </Typography>
       </div>
