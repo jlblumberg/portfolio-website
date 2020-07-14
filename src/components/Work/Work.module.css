@@ -4,7 +4,8 @@
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(250, 250, 250);
+  padding: 0 2%;
 }
 
 .headerText {
@@ -13,8 +14,38 @@
   margin-bottom: 5%;
 }
 
-.descriptionText {
-  text-align: left;
-  max-width: 70%;
-  margin-bottom: 10%;
+.cardActions {
+  float: left;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+
+.masonryGrid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+
+.masonryGridColumns {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.masonryGrid > div { /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+  .masonryGrid {
+    margin-left: -15px; /* gutter size offset */
+  }
+  .masonryGridColumns {
+    padding-left: 15px; /* gutter size offset */
+  }
+  .masonryGridColumns > div {
+    margin-bottom: 15px; /* space between items */
+  }
 }
