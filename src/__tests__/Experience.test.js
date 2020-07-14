@@ -11,7 +11,7 @@ describe('Experience', () => {
   });
 
   it('has a section for each of western, ehd, nmpi, and makers', () => {
-    expect(wrapper.find('#accordian').length).toEqual(4);
+    expect(wrapper.find('#accordion').length).toEqual(4);
   });
 
   it('has a down button which takes you to the work section', () => {

@@ -18,20 +18,20 @@ const Experience = () => {
       </div>
       <div className={styles.descriptionText} id='description'>
         {experiences.map((experience, index) => (
-          <Accordion id='accordian' key={index}>
-            <AccordionSummary styles={{textAlign: 'center'}} expandIcon={<ExpandMoreIcon />}>
+          <Accordion id='accordion' key={index}>
+            <AccordionSummary styles={{ textAlign: 'center' }} expandIcon={<ExpandMoreIcon />}>
               <Avatar className={styles.avatar} src={experience.avatar} variant="square"></Avatar>
               <Typography variant='h6' color='textPrimary' className={styles.primaryHeader}>{experience.institution}</Typography>
               <Typography variant='h6' color='textSecondary'>{experience.dates}</Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography variant='h6' component={'span'}>
+              <div>
                 <ul>
-                  <li>{experience.description1}</li>
-                  <li>{experience.description2}</li>
-                  <li>{experience.description3}</li>
+                  <Typography variant='h6' component={'li'}>{experience.description1}</Typography><br />
+                  <Typography variant='h6' component={'li'}>{experience.description2}</Typography><br />
+                  <Typography variant='h6' component={'li'}>{experience.description3}</Typography>
                 </ul>
-              </Typography>
+              </div>
             </AccordionDetails>
           </Accordion>
         ))}
