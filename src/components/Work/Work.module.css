@@ -1,0 +1,20 @@
+.flexContainer { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgb(245, 245, 245);
+}
+
+.headerText {
+  max-width: 90%;
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+
+.descriptionText {
+  text-align: left;
+  max-width: 70%;
+  margin-bottom: 10%;
+}
