@@ -20,12 +20,13 @@ const Work = () => {
 
   const projectCards = projects.map((project, index) => (
     <Card key={index}>
-      <CardMedia
-        component="img"
-        alt={project.alt}
-        image={project.image}
-      />
       <CardContent>
+        <CardMedia
+          className={styles.image}
+          component="img"
+          alt={project.alt}
+          image={project.image}
+        />
         <Typography gutterBottom variant="h5">
           {project.title}
         </Typography>
@@ -61,8 +62,11 @@ const Work = () => {
       >
         {projectCards}
       </Masonry>
-      <div>
-        <IconButton color='primary' id='down-button' onClick={handleClick}>
+      <div className={styles.downButton}>
+        <IconButton
+          color='primary'
+          id='down-button'
+          onClick={handleClick}>
           <KeyboardArrowDownIcon fontSize='large' />
         </IconButton>
       </div>

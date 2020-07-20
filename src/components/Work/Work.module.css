@@ -14,6 +14,10 @@
   margin-bottom: 5%;
 }
 
+.image {
+  margin-bottom: 20px;
+}
+
 .cardActions {
   float: left;
   margin-bottom: 8px;
@@ -34,8 +38,12 @@
 }
 
 /* Style your items */
-.masonryGrid > div { /* change div to reference your elements you put in <Masonry> */
-  margin-bottom: 20px;
+.masonryGridColumns > div { /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 40px;
+}
+
+.downButton{
+  margin-bottom: 25px;
 }
 
 @media (max-width: 800px) {
