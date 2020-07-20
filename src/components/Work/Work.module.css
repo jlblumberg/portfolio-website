@@ -24,26 +24,25 @@
   display: -webkit-box; /* Not needed if autoprefixing */
   display: -ms-flexbox; /* Not needed if autoprefixing */
   display: flex;
-  margin-left: -30px; /* gutter size offset */
   width: auto;
 }
 
 .masonryGridColumns {
-  padding-left: 30px; /* gutter size */
+  padding-right: 20px;
+  padding-left: 20px; /* gutter size */
   background-clip: padding-box;
 }
 
 /* Style your items */
 .masonryGrid > div { /* change div to reference your elements you put in <Masonry> */
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 800px) {
-  .masonryGrid {
-    margin-left: -15px; /* gutter size offset */
-  }
+
   .masonryGridColumns {
-    padding-left: 15px; /* gutter size offset */
+    padding-left: 15px; 
+    padding-right: 15px; 
   }
   .masonryGridColumns > div {
     margin-bottom: 15px; /* space between items */
