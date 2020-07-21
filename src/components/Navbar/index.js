@@ -14,7 +14,7 @@ const Navbar = () => {
           <div className={styles.centerPadding}></div>
           <Button color="inherit">about</Button>
           <Button color="inherit">experience</Button>
-          <Button color="inherit">work</Button>
+          <Button color="inherit">projects</Button>
           <Button color="inherit">contact</Button>
           <Button variant="outlined" color="inherit">CV / Resume</Button>
         </Toolbar>

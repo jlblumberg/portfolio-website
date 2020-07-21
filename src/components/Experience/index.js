@@ -27,9 +27,9 @@ const Experience = () => {
             <AccordionDetails>
               <div>
                 <ul>
-                  <Typography variant='h6' component={'li'}>{experience.description1}</Typography><br />
-                  <Typography variant='h6' component={'li'}>{experience.description2}</Typography><br />
-                  <Typography variant='h6' component={'li'}>{experience.description3}</Typography>
+                  <Typography component={'li'}>{experience.description1}</Typography><br />
+                  <Typography component={'li'}>{experience.description2}</Typography><br />
+                  <Typography component={'li'}>{experience.description3}</Typography>
                 </ul>
               </div>
             </AccordionDetails>
