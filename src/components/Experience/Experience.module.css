@@ -26,3 +26,17 @@
 .primaryHeader {
   flex-grow: 1;
 }
+
+@media (max-width: 800px) {
+  .headerText {
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+  .descriptionText {
+    max-width: 90%;
+    margin-bottom: 10%;
+  }
+  .downButton {
+    margin: 5% 0;
+  }
+}

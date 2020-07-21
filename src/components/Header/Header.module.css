@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgb(245, 245, 245);
 }
 
@@ -23,4 +23,11 @@
 
 .downButton {
   margin-bottom: 2%;
+}
+
+@media (max-width: 800px) {
+  .profilePic {
+    height: 130px;
+    margin-top: 20%;
+  }
 }

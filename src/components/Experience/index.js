@@ -22,7 +22,7 @@ const Experience = () => {
             <AccordionSummary styles={{ textAlign: 'center' }} expandIcon={<ExpandMoreIcon />}>
               <Avatar className={styles.avatar} src={experience.avatar} variant="square"></Avatar>
               <Typography variant='h6' color='textPrimary' className={styles.primaryHeader}>{experience.institution}</Typography>
-              <Typography variant='h6' color='textSecondary'>{experience.dates}</Typography>
+              <Typography variant='subtitle1' color='textSecondary'>{experience.dates}</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <div>
@@ -36,7 +36,7 @@ const Experience = () => {
           </Accordion>
         ))}
       </div>
-      <div>
+      <div className={styles.downButton}>
         <IconButton color='primary' id='down-button' onClick={handleClick}>
           <KeyboardArrowDownIcon fontSize='large' />
         </IconButton>

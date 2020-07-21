@@ -10,3 +10,19 @@
 .form {
   width: 50%;
 }
+
+.upButton {
+  margin-top: 4%;
+}
+
+@media (max-width: 800px) {
+  .headerText {
+    margin-top: -25%;
+  }
+  .form {
+    width: 65%;
+  }
+  .upButton {
+    margin-top: 15%;
+  }
+}

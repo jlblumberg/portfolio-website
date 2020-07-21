@@ -11,7 +11,7 @@ const Contact = () => {
 
   return (
     <div className={styles.flexContainer}>
-      <div id='header'>
+      <div id='header' className={styles.headerText}>
         <Typography style={{ marginTop: '5.5em', marginBottom: '3.5em' }} variant='h5'>
           Why not say <strong>hi</strong> 👋
         </Typography>
@@ -33,11 +33,10 @@ const Contact = () => {
           </div>
         </form>
       </div>
-      <div>
+      <div className={styles.upButton}>
         <IconButton
           color='primary'
           id='back-to-top-button'
-          style={{ marginTop: '2.5em' }}
           onClick={handleClick}
         >
           <KeyboardArrowUpIcon fontSize='large' />
