@@ -1,13 +1,17 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Work from '../components/Work'
+import Projects from '../components/Projects'
 
-describe('Work', () => {
+describe('Projects', () => {
 
-  const wrapper = shallow(<Work />)
+  const wrapper = shallow(<Projects />)
 
   it('renders correctly', () => {
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('has a card for each project', () => {
+    expect(wrapper.find('#project').length).toEqual(6);
   });
 
   it('has a down button which takes you to the contact section', () => {

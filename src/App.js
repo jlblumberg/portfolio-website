@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import About from './components/About';
 import Experience from './components/Experience';
-import Work from './components/Work';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Header />
       <About />
       <Experience />
-      <Work />
+      <Projects />
     </div>
   );
 }

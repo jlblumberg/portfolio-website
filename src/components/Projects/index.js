@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './Work.module.css'
+import styles from './Projects.module.css'
 import { Typography, IconButton, Card, CardActions, CardContent, CardMedia, Button } from '@material-ui/core';
-import { projects } from '../../work.js'
+import { projects } from '../../projects.js'
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import Masonry from 'react-masonry-css';
 
-const Work = () => {
+const Projects = () => {
 
   const handleClick = () => {
     alert('add in scroll functionality later')
@@ -19,7 +19,7 @@ const Work = () => {
   };
 
   const projectCards = projects.map((project, index) => (
-    <Card key={index}>
+    <Card key={index} id="project">
       <CardContent>
         <CardMedia
           className={styles.image}
@@ -39,11 +39,23 @@ const Work = () => {
       </CardContent>
       <CardActions className={styles.cardActions}>
         {project.websitelink === null ? null : (
-          <Button href={project.websitelink} color="primary" variant="contained">
+          <Button
+            href={project.websitelink}
+            target="_blank"
+            rel="noopener noreferrer"
+            color="primary"
+            variant="contained"
+          >
             App
           </Button>
         )}
-        <Button href={project.githublink} color="primary" variant="contained">
+        <Button
+          href={project.githublink}
+          target="_blank"
+          rel="noopener noreferrer"
+          color="primary"
+          variant="contained"
+        >
           Code
         </Button>
       </CardActions>
@@ -53,7 +65,7 @@ const Work = () => {
   return (
     <div className={styles.flexContainer}>
       <div className={styles.headerText} id='header'>
-        <Typography variant='h5' color='textSecondary'>MY WORK</Typography>
+        <Typography variant='h5' color='textSecondary'>PROJECTS</Typography>
       </div>
       <Masonry
         breakpointCols={columnBreakpoints}
@@ -74,4 +86,4 @@ const Work = () => {
   )
 }
 
-export default Work;
+export default Projects;
