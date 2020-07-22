@@ -3,11 +3,12 @@ import styles from './About.module.css';
 import { Typography, Icon } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import scrollToElement from 'scroll-to-element';
 
 const About = () => {
 
   const handleClick = () => {
-    alert('add in scroll functionality later')
+    scrollToElement('.experience-section');
   }
 
   return (

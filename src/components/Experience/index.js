@@ -4,11 +4,12 @@ import { IconButton, Typography, Accordion, AccordionSummary, Avatar, AccordionD
 import { experiences } from '../../experiences';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import scrollToElement from 'scroll-to-element';
 
 const Experience = () => {
 
   const handleClick = () => {
-    alert('add in scroll functionality later')
+    scrollToElement('.projects-section');
   }
 
   return (

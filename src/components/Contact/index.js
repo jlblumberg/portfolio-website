@@ -2,11 +2,12 @@ import React from 'react';
 import styles from './Contact.module.css'
 import { IconButton, Typography, TextField, Button } from '@material-ui/core';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
+import scrollToElement from 'scroll-to-element';
 
 const Contact = () => {
 
   const handleClick = () => {
-    alert('add in scroll functionality later')
+    scrollToElement('.header-section');
   }
 
   return (

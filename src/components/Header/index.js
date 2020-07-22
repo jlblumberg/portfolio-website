@@ -3,11 +3,12 @@ import styles from './Header.module.css';
 import { Typography } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import scrollToElement from 'scroll-to-element';
 
 const Header = () => {
 
   const handleClick = () => {
-    alert('add in scroll functionality later')
+    scrollToElement('.about-section');
   }
 
   return (
