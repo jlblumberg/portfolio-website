@@ -11,11 +11,21 @@ function App() {
   return (
     <div className={styles.flexContainer}>
       <Navbar />
-      <Header />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact />
+      <div className="header-section">
+        <Header />
+      </div>
+      <div className="about-section">
+        <About />
+      </div>
+      <div className="experience-section">
+        <Experience />
+      </div>
+      <div className="projects-section">
+        <Projects />
+      </div>
+      <div className="contact-section">
+        <Contact />
+      </div>
     </div>
   );
 }

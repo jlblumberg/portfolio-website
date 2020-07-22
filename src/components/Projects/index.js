@@ -4,11 +4,12 @@ import { Typography, IconButton, Card, CardActions, CardContent, CardMedia, Butt
 import { projects } from '../../projects.js'
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import Masonry from 'react-masonry-css';
+import scrollToElement from 'scroll-to-element';
 
 const Projects = () => {
 
   const handleClick = () => {
-    alert('add in scroll functionality later')
+    scrollToElement('.contact-section');
   }
 
   const columnBreakpoints = {
