@@ -41,7 +41,7 @@ const About = () => {
           <p>
             Now, I'm an engineer on the operations squad at <a href="https://www.tiney.co/" target="_blank" rel="noopener noreferrer">tiney</a>. 
             We're a tech startup working to make a big impact on little lives by reinventing childminding in the UK. 
-            With my focus being on Operations, I build tools which empower our internal teams and our tiney childminders to do what they do best; important because there is a lot of work to do 💪
+            With my focus being on operations, I build tools which empower our internal teams and our tiney childminders to do what they do best; important because there is a lot of work to do 💪
           </p>
         </Typography>
       </div>
