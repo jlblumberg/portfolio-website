@@ -1,40 +1,49 @@
-import React from 'react';
+import React from "react";
 import {
-  AppBar, Toolbar, CssBaseline, Divider, Drawer, Hidden,
-  IconButton, Button, List, ListItem, ListItemText
-} from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
-import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
-import { makeStyles } from '@material-ui/core/styles';
-import styles from './Navbar.module.css';
-import scrollToElement from 'scroll-to-element';
+  AppBar,
+  Toolbar,
+  CssBaseline,
+  Divider,
+  Drawer,
+  Hidden,
+  IconButton,
+  Button,
+  List,
+  ListItem,
+  ListItemText,
+} from "@material-ui/core";
+import MenuIcon from "@material-ui/icons/Menu";
+import HomeRoundedIcon from "@material-ui/icons/HomeRounded";
+import { makeStyles } from "@material-ui/core/styles";
+import styles from "./Navbar.module.css";
+import scrollToElement from "scroll-to-element";
 
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
+    display: "flex",
   },
   drawer: {
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up("sm")]: {
       width: drawerWidth,
       flexShrink: 0,
     },
   },
   appBar: {
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up("sm")]: {
       width: "100%",
       marginLeft: drawerWidth,
     },
   },
   smallScreenButton: {
-    [theme.breakpoints.up('sm')]: {
-      display: 'none',
+    [theme.breakpoints.up("sm")]: {
+      display: "none",
     },
   },
   bigScreenButton: {
-    [theme.breakpoints.only('xs', 'sm')]: {
-      display: 'none',
+    [theme.breakpoints.only("xs", "sm")]: {
+      display: "none",
     },
   },
   // necessary for content to be below app bar
@@ -49,7 +58,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Navbar = () => {
-
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -63,7 +71,7 @@ const Navbar = () => {
     { name: "EXPERIENCE", className: ".experience-section" },
     { name: "PROJECTS", className: ".projects-section" },
     { name: "CONTACT", className: ".contact-section" },
-  ]
+  ];
 
   const drawer = (
     <div>
@@ -71,15 +79,19 @@ const Navbar = () => {
       <Divider />
       <List>
         {drawerSections.map((section, index) => (
-          <ListItem button key={index} onClick={() => scrollToElement(section.className)}>
+          <ListItem
+            button
+            key={index}
+            onClick={() => scrollToElement(section.className)}
+          >
             <ListItemText primary={section.name} />
           </ListItem>
         ))}
         <ListItem
           button
-          component='a'
+          component="a"
           key={drawerSections.length + 1}
-          href="https://drive.google.com/file/d/10JzC6cbOU-7MVljs-Vjb0n5P94x3iz9m/view?usp=sharing"
+          href="https://drive.google.com/file/d/1SwgZ93UHTLU3ViGn8ejxQNAAVKVtxJP2/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -99,15 +111,39 @@ const Navbar = () => {
             edge="start"
             id="home-button"
             className={classes.bigScreenButton}
-            onClick={() => scrollToElement('.header-section')}
+            onClick={() => scrollToElement(".header-section")}
           >
             <HomeRoundedIcon />
           </IconButton>
           <div className={styles.centerPadding}></div>
-          <Button color="inherit" className={classes.bigScreenButton} onClick={() => scrollToElement('.about-section')}>about</Button>
-          <Button color="inherit" className={classes.bigScreenButton} onClick={() => scrollToElement('.experience-section')}>experience</Button>
-          <Button color="inherit" className={classes.bigScreenButton} onClick={() => scrollToElement('.projects-section')}>projects</Button>
-          <Button color="inherit" className={classes.bigScreenButton} onClick={() => scrollToElement('.contact-section')}>contact</Button>
+          <Button
+            color="inherit"
+            className={classes.bigScreenButton}
+            onClick={() => scrollToElement(".about-section")}
+          >
+            about
+          </Button>
+          <Button
+            color="inherit"
+            className={classes.bigScreenButton}
+            onClick={() => scrollToElement(".experience-section")}
+          >
+            experience
+          </Button>
+          <Button
+            color="inherit"
+            className={classes.bigScreenButton}
+            onClick={() => scrollToElement(".projects-section")}
+          >
+            projects
+          </Button>
+          <Button
+            color="inherit"
+            className={classes.bigScreenButton}
+            onClick={() => scrollToElement(".contact-section")}
+          >
+            contact
+          </Button>
           <Button
             variant="outlined"
             color="inherit"
@@ -146,6 +182,6 @@ const Navbar = () => {
       </nav>
     </div>
   );
-}
+};
 
 export default Navbar;

@@ -10,8 +10,8 @@ describe('Experience', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('has a section for each of western, ehd, nmpi, and makers', () => {
-    expect(wrapper.find('#accordion').length).toEqual(4);
+  it('has a section for each of western, ehd, nmpi, makers, and tiney', () => {
+    expect(wrapper.find('#accordion').length).toEqual(5);
   });
 
   it('has a down button which takes you to the work section', () => {

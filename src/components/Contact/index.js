@@ -1,50 +1,42 @@
-import React from 'react';
-import styles from './Contact.module.css'
-import { IconButton, Typography, TextField, Button } from '@material-ui/core';
-import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
-import scrollToElement from 'scroll-to-element';
+import React from "react";
+import styles from "./Contact.module.css";
+import { IconButton, Typography, Button } from "@material-ui/core";
+import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
+import scrollToElement from "scroll-to-element";
 
 const Contact = () => {
-
   const handleClick = () => {
-    scrollToElement('.header-section');
-  }
+    scrollToElement(".header-section");
+  };
 
   return (
     <div className={styles.flexContainer}>
-      <div id='header' className={styles.headerText}>
-        <Typography style={{ marginTop: '5.5em', marginBottom: '3.5em' }} variant='h5'>
+      <div id="header" className={styles.headerText}>
+        <Typography
+          style={{ marginTop: "5.5rem", marginBottom: "3rem" }}
+          variant="h5"
+        >
           Why not say <strong>hi</strong> 👋
         </Typography>
       </div>
-      <div className={styles.form} id='form'>
-        <form action="https://getsimpleform.com/messages?form_api_token=fee2c6c94fa2bb6ca482405d707eba90" method='POST'>
-          <TextField fullWidth style={{ marginBottom: '1.25em' }} variant='outlined' name='email' label='Your email address' />
-          <TextField fullWidth style={{ marginBottom: '1.25em' }} variant='outlined' name='subject' label='Message summary' />
-          <TextField fullWidth style={{ marginBottom: '2em' }} variant='outlined' multiline rows={4} name='body' label='Message body' />
-          <div style={{ textAlign: 'center' }}>
-            <Button
-              color='primary'
-              variant='contained'
-              type='submit'
-              onClick={(e) => { alert("Thanks! I'll get back to you as soon as I can.") }}
-            >
-              send
-            </Button>
-          </div>
-        </form>
+      <div style={{ textAlign: "center" }}>
+        <a href="mailto: jlblumberg@gmail.com">
+          <Button color="primary" variant="contained">
+            Send email
+          </Button>
+        </a>
       </div>
       <div className={styles.upButton}>
         <IconButton
-          color='primary'
-          id='back-to-top-button'
+          color="primary"
+          id="back-to-top-button"
           onClick={handleClick}
         >
-          <KeyboardArrowUpIcon fontSize='large' />
+          <KeyboardArrowUpIcon fontSize="large" />
         </IconButton>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

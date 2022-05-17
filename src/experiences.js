@@ -1,12 +1,20 @@
 export const experiences = 
 [
   {
+    avatar: "https://i.imgur.com/Wye7C9d.png",
+    institution: "tiney",
+    dates: "Jul 2020 - Present",
+    description1: "Scoped and helped build our microservice-based onboarding flow for one half of the customers in tiney's marketplace model",
+    description2: "Built and shipped the frontend of our most-used app feature, which is used by almost all of our customers each day",
+    description3: "Scaled up and built new features for our payments solution to cope with our customer base growing over 1600% since I joined",
+  },
+  {
     avatar: "https://i.imgur.com/K2HelWY.png",
     institution: "Makers Academy",
     dates: "Dec 19 - Apr 20",
     description1: "A 16-week intensive software development bootcamp, focused on object-oriented design, Agile methodologies, test-driven development, and pair programming",
     description2: "Additional experience includes version control with git and GitHub, continuous integration and delivery with TravisCI/CircleCI and Heroku, writing user stories, and building MVC web apps",
-    description3: "Mentored two junior students, running sessions on topics such as using mocks to improve unit test isolation and honing one’s TDD process",
+    description3: "Mentored two junior students, running sessions on topics such as using mocks to improve unit test isolation and honing one's TDD process",
   },
   {
     avatar: "https://i.imgur.com/kOBh5JZ.jpg",

@@ -23,7 +23,7 @@ const About = () => {
         <IconButton href="https://www.linkedin.com/in/josh-blumberg/" target="_blank" rel="noopener noreferrer" className={styles.icon}>
           <Icon className="fab fa-linkedin-in" fontSize="large" color="primary" />
         </IconButton>
-        <IconButton href="https://www.linkedin.com/in/josh-blumberg/" target="_blank" rel="noopener noreferrer" className={styles.icon}>
+        <IconButton href="https://jlblumberg.medium.com/" target="_blank" rel="noopener noreferrer" className={styles.icon}>
           <Icon className="fab fa-medium-m" fontSize="large" color="primary" />
         </IconButton>
       </div>
@@ -39,9 +39,9 @@ const About = () => {
             <a href="https://blog.makersacademy.com/bad-days-learning-to-code-and-gaining-control-422936255bb7" target="_blank" rel="noopener noreferrer">here</a>).
           </p>
           <p>
-            Now, I'm an engineer on the operations squad at <a href="https://www.tiney.co/" target="_blank" rel="noopener noreferrer">tiney</a>. 
+            Now, I'm an engineer on the payments squad at <a href="https://www.tiney.co/" target="_blank" rel="noopener noreferrer">tiney</a>. 
             We're a tech startup working to make a big impact on little lives by reinventing childminding in the UK. 
-            With my focus being on operations, I build tools which empower our internal teams and our tiney childminders to do what they do best; important because there is a lot of work to do 💪
+            Within payments, I build tools which empower our tiney childminders to manage their finances for the businesses they run.
           </p>
         </Typography>
       </div>
