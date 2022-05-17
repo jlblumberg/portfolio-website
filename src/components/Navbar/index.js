@@ -149,7 +149,7 @@ const Navbar = () => {
             color="inherit"
             style={{ marginLeft: "5px" }}
             className={classes.bigScreenButton}
-            href="https://drive.google.com/file/d/10JzC6cbOU-7MVljs-Vjb0n5P94x3iz9m/view?usp=sharing"
+            href="https://drive.google.com/file/d/1SwgZ93UHTLU3ViGn8ejxQNAAVKVtxJP2/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
