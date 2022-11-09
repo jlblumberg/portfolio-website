@@ -91,7 +91,7 @@ const Navbar = () => {
           button
           component="a"
           key={drawerSections.length + 1}
-          href="https://drive.google.com/file/d/1SwgZ93UHTLU3ViGn8ejxQNAAVKVtxJP2/view?usp=sharing"
+          href="https://drive.google.com/file/d/1Cw0y6znrjiDcHxSu9f97I0X1rjm5Zkzo/view?usp=share_link"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -149,7 +149,7 @@ const Navbar = () => {
             color="inherit"
             style={{ marginLeft: "5px" }}
             className={classes.bigScreenButton}
-            href="https://drive.google.com/file/d/1SwgZ93UHTLU3ViGn8ejxQNAAVKVtxJP2/view?usp=sharing"
+            href="https://drive.google.com/file/d/1Cw0y6znrjiDcHxSu9f97I0X1rjm5Zkzo/view?usp=share_link"
             target="_blank"
             rel="noopener noreferrer"
           >

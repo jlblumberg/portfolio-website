@@ -3,7 +3,7 @@ export const projects =
     {
       title: "WePick",
       githublink: "https://github.com/jasylwong/wepick",
-      websitelink: "https://wepick.herokuapp.com/users/sign_in",
+      websitelink: null,
       description: "An app designed to help friends choose a movie during Covid-19 isolation. Think Tinder, but for films not fiancées.",
       image: "https://i.imgur.com/8sRMy9E.gif",
       alt: "WePick example use",
@@ -39,7 +39,7 @@ export const projects =
     {
       title: "Key-Time",
       githublink: "https://github.com/jlblumberg/hfh-groceries",
-      websitelink: "https://hfh-groceries.herokuapp.com/",
+      websitelink: null,
       description: "A 2-day hackathon entry designed to help frontline workers shop safely during Covid-19.",
       image: "https://i.imgur.com/uXCItWM.png",
       alt: "key-time example use",
@@ -48,7 +48,7 @@ export const projects =
     {
       title: "Acebook",
       githublink: "https://github.com/Peter2-71828/aceBook-PingPong",
-      websitelink: "https://acebook-pingpong.herokuapp.com/users/sign_in",
+      websitelink: null,
       description: "A clone of the similarly sounding social networking site.",
       image: "https://i.imgur.com/aoMI4WQ.png",
       alt: "Acebook example use",
