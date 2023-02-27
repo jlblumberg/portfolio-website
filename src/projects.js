@@ -12,7 +12,7 @@ export const projects =
     {
       title: "Covid-19 Tracker",
       githublink: "https://github.com/jlblumberg/covid-tracker",
-      websitelink: "https://covid-19-data-viz.netlify.app",
+      websitelink: null,
       description: "A single page app for visualising real-time infection data, globally and by country.",
       image: "https://i.imgur.com/7PPyKoJ.png",
       alt: "Covid tracker example use",
